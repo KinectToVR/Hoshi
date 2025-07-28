@@ -1,4 +1,4 @@
-import { _COMMAND, _COMMAND_HOSHI, _COMMAND_NEMI } from './commands.js';
+import { _COMMAND, _COMMAND_HOSHI, _COMMAND_NEMI } from './aliases.js';
 import dotenv from 'dotenv';
 import process from 'node:process';
 

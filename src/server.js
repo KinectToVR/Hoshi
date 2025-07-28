@@ -8,8 +8,8 @@ import {
   InteractionType,
   verifyKey,
 } from 'discord-interactions';
-import { _COMMAND, _COMMAND_HOSHI, _COMMAND_NEMI } from './commands.js';
-import { commandMap, commandGroups } from './bot.js';
+import { _COMMAND, _COMMAND_HOSHI, _COMMAND_NEMI } from './aliases.js';
+import { commandMap, commandGroups } from './commands.js';
 
 class JsonResponse extends Response {
   constructor(body, init) {
