@@ -1,4 +1,4 @@
-import { _COMMAND } from './commands.js';
+import { _COMMAND, _COMMAND_HOSHI, _COMMAND_NEMI } from './commands.js';
 import dotenv from 'dotenv';
 import process from 'node:process';
 
@@ -34,7 +34,7 @@ const response = await fetch(url, {
     Authorization: `Bot ${token}`,
   },
   method: 'PUT',
-  body: JSON.stringify([_COMMAND]),
+  body: JSON.stringify([_COMMAND, _COMMAND_HOSHI, _COMMAND_NEMI]),
 });
 
 if (response.ok) {

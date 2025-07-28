@@ -7,6 +7,9 @@ const commandEntries = [
 [["yay"],
 `https://cdn.discordapp.com/attachments/731826713880690748/1037979052058877992/yayy.mp4?ex=68886c52&is=68871ad2&hm=ce4c498255c4e7e832e9b441db8735d0a4fe86db2badb4cbb4d69e6ba166ae95&`],
 
+[["nay"],
+`https://cdn.discordapp.com/attachments/1016040509019537528/1040007617575133294/yay.mp4?ex=68888d52&is=68873bd2&hm=1e18bf76e1868ec87474c1a4ef18936960a90020a83d75266031047088797bd6&`],
+
 [["minus10", "-10", "minus1", "-1"],
 `To fix the driver not working, you can either click the \"Re-register SteamVR driver entry\" button in Amethyst Settings.`],
 

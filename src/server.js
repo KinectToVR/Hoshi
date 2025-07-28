@@ -8,7 +8,7 @@ import {
   InteractionType,
   verifyKey,
 } from 'discord-interactions';
-import { _COMMAND } from './commands.js';
+import { _COMMAND, _COMMAND_HOSHI, _COMMAND_NEMI } from './commands.js';
 import { commandMap, commandGroups } from './bot.js';
 
 class JsonResponse extends Response {
@@ -57,7 +57,9 @@ router.post('/', async (request, env) => {
   if (interaction.type === InteractionType.APPLICATION_COMMAND) {
     // Most user commands will come as `APPLICATION_COMMAND`.
     switch (interaction.data.name.toLowerCase()) {
-      case _COMMAND.name.toLowerCase(): {
+      case _COMMAND.name.toLowerCase():
+      case _COMMAND_HOSHI.name.toLowerCase():
+      case _COMMAND_NEMI.name.toLowerCase(): {
         // I know this code doesn't look or feel too great...
         // Please leave me alone, I'm a C# dev... I hate JS......
         const optionValue = interaction.data.options?.[0]?.value;
