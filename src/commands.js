@@ -298,7 +298,7 @@ In case you're some kinda heretic who wants the old SDK with all the problems it
 [["amazon", "adapter", "adaptor"],
 `Every single time someone has had a dead or faulty adapter, they had purchased it from Amazon.
 We recommend either Ebay, Facebook Marketplace, or local equivalents.
-If you're in the UK, Spain, Ireland, Australia or the Netherlands, you can grab an Xbox 360 Kinect with the adapter from CeX for almost nothing!
+If you're in the UK, Spain, Italy, Ireland, Australia or the Netherlands, you can grab an Xbox 360 Kinect with the adapter from CeX for almost nothing!
 Check the link here https://webuy.com/product-detail/?id=s360kinsoxb
 BTW, this isn't to say all adapters from Amazon are broken. Instead, that all broken adapters were from Amazon. Thanks Bezos.`],
 
