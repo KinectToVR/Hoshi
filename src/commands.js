@@ -68,13 +68,18 @@ Unpackaged Amethyst builds don't use system AppData, but recreate its structure 
 Please type on the Windows search bar \"UAC\", then press enter and make sure that the bar that's on the window that has been just opened is set to the first or second top-most option.`],
 
 [["diyvr", "diy", "controller", "controllers", "driver4vr", "d4vr"],
-`As much as Amethyst is intended for body tracking, we do support emulated, or emulating, headsets or controllers. 
-When you enable either of them (by adding 'Head' or 'Hand' trackers), Amethyst will prompt you to change the SteamVR driver for the compatible one.
+`Amethyst generally supports and allows emulating headsets or controllers.
+
+When you enable either of them (by adding 'Head' or 'Hand' trackers in the Amethyst Settings tab), Amethyst will prompt you to change the SteamVR driver for the compatible one.
 
 Enabling 'Head' tracker will result in HMD position being overridden, ultimately allowing you to track it.
+
 Controller buttons can be bound to device actions, which will provide data for the controllers. Use PSMove buttons, Kinect gestures, and etc.
   
-_Please keep in mind that as much as Amethyst can help you with a janky PhoneVR setup, **we will not**. Such setups often have their own heap of other problems, use at your own risk._`],
+**There's a caveot, though!**
+While Amethyst can work and help you with your improvised janky PhoneVR or any other DIY setup on paper, these type of configurations **are not officially supported**, so our support team won't be able to offer much assistance.
+
+Such setups often have their own heap of other problems, so use Amethyst **at your own risk**.`],
 
 [["notpowered", "e_nui_notpowered"],
 `You can click this link: <http://localhost:4323/launchuri#amethyst-app:apply-fix?Guid=K2VRTEAM-AME2-APII-DVCE-DVCEKINECTV1&FixName=NotPoweredFix> to try to automatically fix the issue.
