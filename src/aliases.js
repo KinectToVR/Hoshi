@@ -10,7 +10,8 @@ export const _COMMAND = {
     {
       name: 'topic',
       description: 'What seekest thou to understand?',
-      type: 3
+      type: 3,
+      autocomplete: true
     },
   ],
 };
@@ -22,7 +23,8 @@ export const _COMMAND_HOSHI = {
     {
       name: 'topic',
       description: 'What seekest thou to understand?',
-      type: 3
+      type: 3,
+      autocomplete: true
     },
   ],
 };
@@ -34,7 +36,8 @@ export const _COMMAND_NEMI = {
     {
       name: 'topic',
       description: 'What seekest thou to understand?',
-      type: 3
+      type: 3,
+      autocomplete: true
     },
   ],
 };

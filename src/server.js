@@ -77,6 +77,36 @@ router.post('/', async (request, env) => {
     }
   }
 
+  if (interaction.type === InteractionType.APPLICATION_COMMAND_AUTOCOMPLETE) {
+    switch (interaction.data.name.toLowerCase()) {
+      case _COMMAND.name.toLowerCase():
+      case _COMMAND_HOSHI.name.toLowerCase():
+      case _COMMAND_NEMI.name.toLowerCase(): {
+        // I know this code doesn't look or feel too great...
+        // Please leave me alone, I'm a C# dev... I hate JS......
+        const optionValue = interaction.data.options?.[0]?.value.toLowerCase();
+        const focused = optionValue || '';
+
+        const matches = Object.keys(commandMap)
+          .filter(key => key.toLowerCase().includes(focused))
+          .slice(0, 25) // Discord max
+          .map(key => ({
+            name: `${key} - ${((commandMap[key] || commandMap['help']).split(' ').reduce((a, w) => a.length + w.length + 1 <= 25 ? a + (a ? ' ' : '') + w : a, ''))}`,  // what shows up in dropdown
+            value: key, // what gets sent back if selected
+          }));
+
+        return new JsonResponse({
+          type: InteractionResponseType.APPLICATION_COMMAND_AUTOCOMPLETE_RESULT,
+          data: {
+            choices: matches,
+          },
+        });
+      }
+      default:
+        return new JsonResponse({ error: 'Unknown Type' }, { status: 400 });
+    }
+  }
+
   console.error('Unknown Type');
   return new JsonResponse({ error: 'Unknown Type' }, { status: 400 });
 });
