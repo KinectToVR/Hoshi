@@ -91,7 +91,7 @@ router.post('/', async (request, env) => {
           .filter(key => key.toLowerCase().includes(focused))
           .slice(0, 25) // Discord max
           .map(key => ({
-            name: `${key} - ${((commandMap[key] || commandMap['help']).split(' ').reduce((a, w) => a.length + w.length + 1 <= 25 ? a + (a ? ' ' : '') + w : a, ''))}`,  // what shows up in dropdown
+            name: `${key}${/^(https?:\/\/)/.test(commandMap[key] || commandMap['help']) ? '' : ' - ' + ((commandMap[key] || commandMap['help']).split(' ').reduce((a, w) => a.length ? (a + ' ' + w).length <= 25 ? a + ' ' + w : a : w.length <= 25 ? w : '', '')) + ((commandMap[key] || commandMap['help']).length > 25 ? '...' : '')}`,  // what shows up in dropdown
             value: key, // what gets sent back if selected
           }));
 
