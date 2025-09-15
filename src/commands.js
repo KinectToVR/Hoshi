@@ -82,7 +82,7 @@ While Amethyst can work and help you with your improvised janky PhoneVR or any o
 Such setups often have their own heap of other problems, so use Amethyst **at your own risk**.`],
 
 [["notpowered", "e_nui_notpowered"],
-`You can click this link: <http://localhost:4323/launchuri#amethyst-app:apply-fix?Guid=K2VRTEAM-AME2-APII-DVCE-DVCEKINECTV1&FixName=NotPoweredFix> to try to automatically fix the issue.
+`You can click this link: <https://docs.k2vr.tech/launchuri#amethyst-app:apply-fix?Guid=K2VRTEAM-AME2-APII-DVCE-DVCEKINECTV1&FixName=NotPoweredFix> to try to automatically fix the issue.
 
 Otherwise check the page here: https://docs.k2vr.tech/en/360/troubleshooting/notpowered`],
 
