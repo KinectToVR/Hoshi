@@ -337,41 +337,21 @@ So thank you. Thank you for keeping me alive, for this month at least. And if yo
 **🏓 Pong!**`],
     
 [["ame2", "2.0"],
-`\`\`\`
-FILE: AMETHYST [2.0]
-CLEARANCE LEVEL: █████
+`Check [here](<https://github.com/KinectToVR/Amethyst-Releases/releases/ame-next>) for the any new manual releases.
+See [this tag](<https://github.com/KinectToVR/AME2/releases/tag/ame2-latest>) for the latest GitHub CI artifacts.
 
-██████████████████████████████████
-1. The ██████████████
-  1.1. ████████████████████████████ avalonia
-  1.2. Test █████████████████████████
+If (when) you find something that doesn't work:
+• Report it directly to the me (meruune/akaya) or
+• Write in the attached GitHub discussion thread or
+• Post it on the Discord server, preferably pinging a team member
 
-██████████████
+Please:
+• Check and toggle everything you can
+• Test edge cases and invalid data inputs
+• Try to break stuff, if you feel like it
 
-2. ██████████████
-  2.1. There is no ███████████████████████████████████████████████████████████████████████████████████████████████████
-  2.2. ████████████████████████████, "Set as..." ██████████████████████████████████████████████████████████████████████████████
-    2.2.1. ██████████████ pre-defined roles █████████████████████████████████████████████████████ 
-  2.3. ████████████████████████████████████████████████████████ dedicated ████████████████████████████
-
-3. ██████████████ tracking:
-  3.1. ██████████████ Relay's mechanism, ██████████████████████████████████████████████████████████████████████ (please just see how Relay works)
-    3.1.1. ██████████████████████████████████████████████████████████████████████ nested one ████████████████████████████
-    3.1.2. ██████████████ will appear and act normally, ██████████████████████████████████████████
-      3.1.2.1. ██████████████ "sub" ██████████████████████████████████████████ ina ██████████████
-
-4. Custom ██████████████
-    4.1. ████████████████████████████ allow devices to ████████████████████████████████████████████████████████
-        4.1.1. ██████████████ will be pre-defined and event-driven:
-            4.1.1.1. ██████████████████████████████████████████████████████████████████████
-            4.1.1.2. ██████████████ step ████████████████████████████████████████████████████████
-            4.1.1.3. ████████████████████████████████████████████████████████ but not overridable
-
-5. ████████████████████████████
-    5.0. Similar to how ████████████████████████████████████████████████████████ position
-    5.1. ██████████████ tracker’s (joint’s) pose ██████████████████████████████████████████
-        5.1.1 ███████████ reference ████████████████████████████████████████████████████████
-\`\`\``],
+Thank you for helping shape the new Amethyst! 💜
+`],
     
 ];
 
