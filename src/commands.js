@@ -20,17 +20,20 @@ Webcam tracking isn't really good.
 Machine learning models like Mediapipe Pose, used by Juice's SteamVR driver for example, have to deal with a lot of data. We're talking full high-def color video!
 From that, it needs to somehow figure out your body and where each part is in 3D. Because you are in a 3D space captured by a 2D camera.
 Processing all that information, even under the best conditions, still results in an unreliable shaky output that's almost unuseable.
-The Kinect already sees in 3D, so this isn't an issue. Also, the body tracking for Kinect was specifically made for games.
-At least for now, webcam tracking isn't a good idea to get into, unless you want to use AprilTag trackers, that works pretty well.
 
-**TL;DR** Install Caramel plugin to use your iPhone or webcam for tracking. The latter will requrie you to build a small Blazor Server app.`],
+The Kinect sees in 3D, so depth isn't an issue for it. Moreover, the body tracking for Kinect was specifically made for games.
+At least for now, webcam tracking isn't a good idea for actually functional body tracking (outside of silly experiments), unless you want to use AprilTag trackers, those work pretty well.
+
+Install Caramel plugin to use your iPhone or webcam for tracking. The latter will requrie you to build a small Blazor Server app.`],
 
 [["linux"],
 `**Amethyst does not support linux**. It will not run through Wine or any similar \"not-emulators\". We use too much Windows-specific APIs and libraries.
 (Examples? COM - no linux equivalent, WinRT - Win32 projected via COM, Store APIs - packaged builds require Microsoft Store for MS's own injected DRM)
 
-That said, [WinUI is currently on life support](<https://github.com/microsoft/microsoft-ui-xaml/discussions/9417>), and Avalonia seems to be very promising. As much as we'd love to get rid of it and support linux, another rewrite is just too much.
-I *(「Akaya」)* don't even use VR or own a HMD anymore, and a complete rewrite is much more demanding in terms of testing than minor fixes/features.`],
+That said, [WinUI is currently on life support](<https://github.com/microsoft/microsoft-ui-xaml/discussions/9417>) and Avalonia seems to be very promising, that's why we're rewriting Amethyst from scratch using it.
+
+If you're interested in helping us, run the \`/hoshi ame2\` command on this server for further information, it'll be appreciated!
+`],
 
 [["dev"],
 `https://docs.k2vr.tech/en/dev/overview/`],
@@ -38,7 +41,7 @@ I *(「Akaya」)* don't even use VR or own a HMD anymore, and a complete rewrite
 [["multikinect"],
 `As much as multi-kinect setups aren't currently possible in Amethyst, the v1.8 SDK natively supports managing multiple instances of the 360 Kinect.
 
-For now, we don't plan on adding such functionality to Amethyst, as it would result in either a janky band-aid or a complete app rewrite (see: [linux]).
+For now, we don't plan on adding such functionality to Amethyst, as it would result in either a janky band-aid or a complete app rewrite (see: \`/hoshi linux\`).
 The closest thing available as of now, is tracking overrides. You can set up one 360 Kinect to track you when facing forward, and a XBONE one to track when you're turned around.`],
 
 [["relay", "trackingrelay"],
@@ -337,7 +340,11 @@ So thank you. Thank you for keeping me alive, for this month at least. And if yo
 **🏓 Pong!**`],
     
 [["ame2", "2.0"],
-`Check [here](<https://github.com/KinectToVR/Amethyst-Releases/releases/ame-next>) for the any new manual releases.
+`This is the future of Amethyst, but for now it still needs A LOT of work.
+
+As of now, the 2.0 Avalonia Amethyst is missing many core functionalities; you can help us developing it by writing code and testing the existing one using the following GitHub links.
+
+Check [here](<https://github.com/KinectToVR/Amethyst-Releases/releases/ame-next>) for the any new manual releases.
 See [this tag](<https://github.com/KinectToVR/AME2/releases/tag/ame2-latest>) for the latest GitHub CI artifacts.
 
 If (when) you find something that doesn't work:
