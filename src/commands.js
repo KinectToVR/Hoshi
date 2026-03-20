@@ -359,6 +359,17 @@ Please:
 
 Thank you for helping shape the new Amethyst! 💜
 `],
+
+[["vrcdesktop", "vrchatdesktop"],
+`**TL;DR:** Full Body Tracking is **not available** while playing VRChat in **desktop mode**, but you can use Amethyst to emulate a VR headset (see \`/hoshi diyvr\`).
+
+When you launch VRChat in Desktop Mode, the software operates under the rigid assumption that tracking hardware simply isn't there. It presupposes that you are a stationary user with only a keyboard and mouse.
+
+Even if VRChat receives OSC trackers data, it won't display or let you turn on any option or calibration related to Full Body Tracking.
+
+*If you think about it… it makes sense: why would someone playing WITHOUT a VR headset move and use/have trackers for the rest of the body?*
+
+The only way to have Full Body Tracking while not having a VR headset is emulating it. Amethyst can help with that, but it's very janky… check the command \`/hoshi diyvr\` for further information.`],
     
 ];
 
